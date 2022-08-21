@@ -1,0 +1,48 @@
+.root {
+    -fx-background-color: rgba(0, 0, 0, 0.9);
+    -fx-background-radius: 10;
+}
+
+.button {
+    -fx-pref-width: 75;
+    -fx-pref-height: 75;
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-background-color: rgba(64, 64, 67);
+    -fx-background-insets: 0;
+}
+
+.button:pressed {
+    -fx-background-color: rgba(160, 160, 161, 0.75);
+}
+
+.orangeButton {
+    -fx-background-color: rgba(255, 159, 11, 1);
+}
+
+.orangeButton:pressed {
+    -fx-background-color: rgba(205, 126, 0, 0.75);
+}
+
+.numberButton {
+    -fx-background-color: rgba(123, 123, 127, 0.75);
+}
+
+.numberButton:pressed {
+    -fx-background-color: rgba(160, 160, 161, 0.75);
+}
+
+.result {
+    -fx-font-size: 50;
+    -fx-pref-width: 300;
+    -fx-pref-height: 100;
+    -fx-text-fill: white;
+}
+
+.horizontalBox {
+    -fx-spacing: 1;
+}
+
+.verticalBox {
+    -fx-spacing: 1;
+}
