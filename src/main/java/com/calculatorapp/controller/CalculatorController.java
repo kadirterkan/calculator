@@ -141,6 +141,8 @@ public class CalculatorController {
             int code = event.getCode().getCode();
 
             switch (code) {
+                case 8:
+                    remove();
                 case 47:
                     numberInput(input);
                     break;
@@ -152,10 +154,21 @@ public class CalculatorController {
                     break;
                 case 16:
                     break;
+                case 67:
+                    clearButton.fire();
+                    break;
                 case 10:
                     resultButton.fire();
                     break;
             }
+        }
+    }
+
+    private void remove() {
+        if (number.length() > 1) {
+            number = number.substring(0, number.length() - 1);
+        } else {
+            number = "0";
         }
     }
 }
